@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1260px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header {
+  margin-top: 27px;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 0px 10px;
+  color: rgba(0, 0, 0, 1);
+}
+
+header nav ul li .first_li {
+  color: rgba(0, 130, 244, 1);
+}
+
+header nav button {
+  width: 161px;
+  height: 52px;
+  border-radius: 6px;
+  background: rgba(0, 130, 244, 1);
+  align-items: center;
+}
+
+.header_menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.header_menu .menu_heading h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(0, 128, 253, 1);
+}
+
+.header_menu .menu_heading h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60.55px;
+  font-weight: 700;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.header_menu .menu_heading span {
+  color: rgba(0, 130, 244, 1);
+}
+
+.header_menu .menu_heading p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(103, 103, 103);
+}
+
+.header_menu .menu_heading .menu_button_1 button {
+  width: 194px;
+  height: 63px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: rgb(254, 254, 254);
+  color: #000000;
+}
+
+.menu_button_1 .button_2 {
+  background-color: #ffffff;
+  border: none;
+}
+
+.menu_button_1 .button {
+  background-color: #ffffff;
+  border: none;
+}
+
+.header_menu {
+  margin-top: 100px;
+}
+
+.menu_h_img img {
+  max-width: 100%;
+}
+.menu_button_1 button {
+  background: rgba(0, 130, 244, 1);
+}
+
+.work_menu {
+  margin-top: 212px;
+}
+
+.work_menu h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 48.44px;
+  font-weight: 500;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.work_menu .cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 60px;
+}
+
+.work_menu .cards .card {
+  max-width: 324px;
+}
+
+.work_menu .cards .card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 60px;
+}
+
+.work_menu .cards .card p {
+  margin-top: 10px;
+  max-width: 324px;
+  color: #949494;
+}
+
+.work_menu .cards .card img {
+  max-width: 100%;
+}
+
+section .biolar {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 67px;
+}
+
+section .biolar .bio {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 67px;
+  border-radius: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px;
+  opacity: 0.1px;
+  box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.06);
+  margin-top: 60px;
+}
+
+section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48.44px;
+  font-weight: 500;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 124px;
+}
+
+.bg_fon {
+  background: rgba(0, 130, 244, 1);
+  width: 62px;
+  height: 283px;
+  position: relative;
+  border-radius: 10px 0px 0px 10px;
+}
+
+section .biolar .bio img {
+  max-width: 100%;
+  background-size: cover;
+  width: 62px;
+  position: absolute;
+  top: 109px;
+  left: 30px;
+}
+
+section .biolar .bio p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(87, 87, 87);
+  margin-top: 30px;
+}
+
+.addrees_menu {
+  background: rgba(232, 236, 255, 0.3);
+  height: 200px;
+  margin-top: 176px;
+}
+
+.addrees_menu .addreses {
+  max-width: 487px;
+  margin: auto;
+}
+
+.addrees_menu .addreses h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 31.25px;
+  font-weight: 500;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(0, 128, 253, 1);
+  padding-top: 75px;
+}
+
+.addrees_menu .addreses p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 15px;
+}
+
+.addrees_menu .addreses input {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+footer {
+  background: rgb(255, 255, 255);
+  max-width: 1600px;
+  height: 300px;
+  margin-top:40px; 
+}
+
+footer .about_menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 60px;
+}
+
+footer .about_menu .about h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+footer .about_menu .about p {
+  color: #5b5b5b;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.malumotlar{
+  background: linear-gradient(180deg, #058AFF 0%, rgba(57, 55, 206, 0.87) 97.91%);
+  display: grid;
+  grid-template-columns: auto auto auto   ;
+  padding: 15px;
+  max-width: 1600px;
+  height: 120px;
+}
+
+footer .malumotlar button{
+
+}
+
+@media screen and (max-width: 576px) {
+  header nav {
+    grid-template-columns: auto auto;
+  }
+
+  header nav {
+    grid-template-columns: auto;
+  }
+
+  .header_menu {
+    grid-template-columns: auto;
+  }
+
+  .work_menu .cards {
+    grid-template-columns: auto auto;
+  }
+
+  .work_menu .cards {
+    grid-template-columns: auto;
+  }
+
+  .work_menu .cards .card img {
+    margin-top: 20px;
+  }
+
+  section .biolar {
+    grid-template-columns: auto;
+  }
+
+  section .biolar .bio {
+    grid-template-columns: auto;
+  }
+
+  footer .about_menu{
+    grid-template-columns: auto auto auto;
+  }
+
+  footer .about_menu{
+    grid-template-columns: auto auto ;
+  }
+
+  footer .about_menu{
+    grid-template-columns: auto  ;
+  }
+  .malumotlar{
+    grid-template-columns: auto auto;
+  }
+
+  .malumotlar{
+    grid-template-columns: auto ;
+  }
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+header {
+  background-image: url(./car.jpg);
+  background-size: cover;
+  min-height: 800px;
+  position: center center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  /* padding-top: 40px; */
+  align-items: center;
+  /* position: fixed; */
+  /* background: transparent;
+  backdrop-filter: blur(10px); */
+  background-size: cover;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+ 
+}
+
+header nav ul li a{
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+header nav ul .select {
+  font-family:"Montserrat", sans-serif ;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: white;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-top: 300px;
+}
+
+header button {
+  width: Hug (248px) px;
+  height: Hug (62px) px;
+  top: 560px;
+  left: 135px;
+  padding: 15px 76px 15px 76px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #114e86;
+  color: white;
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+
+main{
+  margin: 150px 0px ;
+}
+
+
+main h2{
+  text-align: center;
+
+}
+
+main p{
+  margin-top: 40px;
+}
+
+
+section .cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px ;
+}
+
+section .cards .card{
+  text-align: center;
+  width: 100%;
+ 
+
+}
+
+section .cards .card_2{
+  background: rgb(74, 74, 250);
+}
+
+section .cards .card_3{
+  border:  1px solid #000000;
+}
+
+
+@media screen and (max-width: 576px) {
+  header {
+    background-image: url(./logo.png);
+  }
+  header h1 {
+    text-align: center;
+    width: 344px;
+  }
+
+  header button {
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+  }
+
+  main p{
+    text-align: center;
+    width: 344px;
+
+  }
+
+  main p:last-of-type{
+    display: none;
+  }
+
+  section .cards{
+    flex-wrap: wrap;
+  }
+}
+
+
