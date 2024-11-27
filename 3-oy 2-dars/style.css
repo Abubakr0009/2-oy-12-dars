@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background: #000;
+}
+
 .container {
   max-width: 1260px;
   padding: 20px 0px;
@@ -14,11 +18,15 @@
 
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 header nav ul {
   display: flex;
+  align-items: center;
+  gap: 20px;
+
 }
 
 .bx-menu {
@@ -47,10 +55,22 @@ header nav img {
 }
 
 header nav .nav_icon svg {
-  background: #666666;
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+
+header nav .nav_icon .bxl-github{
+  font-size: 30px;
+}
+
+header nav .nav_icon .bxl-telegram{
+  font-size: 30px;
+}
+
+
+header nav .nav_icon .bxl-instagram{
+  font-size: 30px;
 }
 
 .header_menu {
@@ -82,6 +102,9 @@ header nav .nav_icon svg {
 
 header .header_menu .header_menu_img img {
   width: 100%;
+  background: #000;
+
+
 }
 
 main {
@@ -113,12 +136,15 @@ main p {
 main .main_icon .icon_row {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  align-items: center;
 }
 
 main .main_icon_2 .icon_row {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   margin-top: 67px;
+  align-items: center;
+
 }
 
 main .main_icon {
@@ -133,6 +159,12 @@ main h2 {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #42446e;
+}
+
+main .main_icon_2 .bxl-github{
+  font-size: 135px;
+  background: #000;
+  color: white;
 }
 
 .crads .card {
