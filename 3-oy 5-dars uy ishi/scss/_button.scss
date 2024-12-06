@@ -1,0 +1,13 @@
+.button {
+  background: $dark;
+  border-radius: 25px;
+  border: 2px;
+  color: $white;
+  padding: 12px 32px;
+  font-family: $font-fem;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
