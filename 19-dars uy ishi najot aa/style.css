@@ -125,6 +125,13 @@ header .header_main {
 
 .main_menu {
   margin-top: 140px;
+  display: grid;
+  gap: 20px;
+}
+
+
+.main_menu img{
+ max-width: 100%;
 }
 
 .main_menu p {
@@ -149,6 +156,12 @@ header .header_main {
     height: 700px; */
 }
 
+.Reviews .cards{
+  
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+}
+
 .container h2 {
   font-family: "Roboto", serif;
   font-size: 22px;
@@ -159,8 +172,7 @@ header .header_main {
 }
 
 .Reviews .card img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100%;
   margin-top: 191px;
 }
 
@@ -176,7 +188,6 @@ header .header_main {
   font-family: "Roboto", serif;
   font-size: 15px;
   font-weight: 400;
-  text-align: center;
   color: white;
   width: 351px;
   margin-top: 24px;
@@ -327,5 +338,8 @@ footer p {
   }
   .plitks .boxs {
     grid-template-columns: auto;
+  }
+  header nav ul{
+    display: none;
   }
 }

@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: #000;
 }
@@ -19,13 +23,21 @@ body {
 nav {
   display: flex;
   align-items: center;
+  gap: 50px;
+  position: fixed;
+  z-index: 6;
   justify-content: space-between;
+  background: linear-gradient(90deg, #98deff, #4b4b4b); 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+  border-radius: 10px; 
+  max-width: 1500px;
+  margin: auto;
 }
 
 header nav ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .bx-menu {
@@ -46,7 +58,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #666666;
+  color: #ffffff;
+  transition: color 0.4s;
+}
+
+header nav ul li a:hover {
+  color: #ffd700;
 }
 
 header nav img {
@@ -87,6 +104,38 @@ header nav .nav_icon .bxl-instagram {
   text-decoration-skip-ink: none;
   color: red linear-gradient(90deg, #13b0f5 -0.08%, #ca24b4 63.6%);
   width: 100%;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation{
+  0% {
+    transform: rotate(0.0deg);
+}
+10% {
+    transform: rotate(5.0deg);
+}
+20% {
+    transform: rotate(-5.0deg);
+}
+30% {
+    transform: rotate(5.0deg);
+}
+40% {
+    transform: rotate(-4.0deg);
+}
+50% {
+    transform: rotate(5.0deg);
+}
+60% {
+    transform: rotate(1.0deg);
+}
+100% {
+    transform: rotate(.0deg);
+}
 }
 
 .header_menu h1 {
@@ -133,10 +182,17 @@ main .main_icon .icon_row {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   align-items: center;
+  transition: background-color 0.5s ease;
 }
 
 main .main_icon .icon_row img {
-  box-shadow: 10px 10px 10px white;
+  box-shadow: 10px 10px 10px rgb(59, 59, 59);
+  cursor: pointer; /* Ko'rsatkichni qo'lga o'xshatadi */
+  transition: transform 0.3s ease; /* Logo kattalashishi animatsiyasi */
+}
+
+main .main_icon .icon_row img:hover{
+  transform: scale(1.2);
 }
 
 main .main_icon_2 .icon_row {
@@ -144,11 +200,18 @@ main .main_icon_2 .icon_row {
   grid-template-columns: auto auto auto auto auto;
   margin-top: 67px;
   align-items: center;
-
+  transition: background-color 0.5s ease;
 }
 
 main .main_icon_2 .icon_row img {
-  box-shadow: 10px 10px 10px white;
+  box-shadow: 10px 10px 10px rgb(59, 59, 59);
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+  background: #000000;
+}
+
+main .main_icon_2 .icon_row img:hover{
+  transform: scale(1.2);
 }
 
 main .main_icon {
@@ -174,12 +237,19 @@ main .main_icon_2 .bxl-github {
 .crads .card {
   max-width: 550px;
   border-radius: 20px;
-  box-shadow: 2px 2px 50px 0px #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crads .card:hover {
+  background: #000;
+  transition: all;
 }
 
 .crads {
   display: grid;
   grid-template-columns: auto auto auto;
+  background: transparent;
   gap: 30px;
   margin: 70px 0px;
 }
@@ -214,12 +284,11 @@ section p {
   font-size: 32px;
   font-weight: 400;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 section .crads .card img {
   width: 100%;
+  border-radius: 10px;
 }
 
 section .crads .card h3 {
@@ -245,8 +314,6 @@ section .crads .card .card_p2 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #666666;
 }
 
@@ -284,8 +351,6 @@ footer ul li a {
   font-family: "Roboto", serif;
   font-size: 18px;
   font-weight: 400;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #42446e;
 }
 
@@ -320,7 +385,7 @@ footer .footer_design p {
 
 @media screen and (max-width: 920px) {
   main .main_icon .icon_row {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto ;
   }
   .crads {
     grid-template-columns: auto auto;
@@ -329,7 +394,7 @@ footer .footer_design p {
 
 @media screen and (max-width: 748px) {
   main .main_icon_2 .icon_row {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto ;
   }
   .crads {
     grid-template-columns: auto;
@@ -338,27 +403,32 @@ footer .footer_design p {
 
 @media screen and (max-width: 576px) {
   main .main_icon .icon_row {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto ;
   }
   main .main_icon_2 .icon_row {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto ;
   }
 
-  main .main_icon .icon_row {
-    grid-template-columns: auto auto;
-  }
-  main .main_icon_2 .icon_row {
-    grid-template-columns: auto auto;
-  }
-
-  main .main_icon .icon_row {
-    grid-template-columns: auto;
+  main .main_icon {
     max-width: 400px;
     margin: auto;
-    display: block;
+    display: block; 
+  }
+
+  
+  /* main .main_icon .icon_row {
+    grid-template-columns: auto;
+ 
   }
   main .main_icon_2 .icon_row {
     grid-template-columns: auto;
+
+  } */
+
+  main .main_icon_2{
+    max-width: 400px;
+    margin: auto;
+    display: block; 
   }
 }
 
@@ -378,4 +448,38 @@ footer .footer_design p {
   section .crads .card {
     margin-top: 30px;
   }
+
+  .header_menu h1 {
+    max-width: 100px;
+    font-size: 35px;
+  }
+
+  .header_menu span {
+    max-width: 200px;
+    font-size: 35px;
+  }
+
+  main .main_icon .icon_row img {
+    margin-top: 40px;
+  }
+
+  main .main_icon_2 .icon_row img {
+    margin-top: 40px;
+  }
+}
+
+
+
+@media screen and (max-width:300px) {
+  main .main_icon .icon_row {
+    grid-template-columns: auto ;
+    max-width: 400px;
+    margin: auto;
+  }
+  main .main_icon_2 .icon_row {
+    grid-template-columns: auto ;
+    max-width: 400px;
+    margin: auto;
+  }
+
 }
