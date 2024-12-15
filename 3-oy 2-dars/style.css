@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -27,9 +27,9 @@ nav {
   position: fixed;
   z-index: 6;
   justify-content: space-between;
-  background: linear-gradient(90deg, #98deff, #4b4b4b); 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
-  border-radius: 10px; 
+  background: linear-gradient(90deg, #98deff, #4b4b4b);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   max-width: 1500px;
   margin: auto;
 }
@@ -111,31 +111,31 @@ header nav .nav_icon .bxl-instagram {
   display: inline-block;
 }
 
-@keyframes wave-animation{
+@keyframes wave-animation {
   0% {
-    transform: rotate(0.0deg);
-}
-10% {
-    transform: rotate(5.0deg);
-}
-20% {
-    transform: rotate(-5.0deg);
-}
-30% {
-    transform: rotate(5.0deg);
-}
-40% {
-    transform: rotate(-4.0deg);
-}
-50% {
-    transform: rotate(5.0deg);
-}
-60% {
-    transform: rotate(1.0deg);
-}
-100% {
-    transform: rotate(.0deg);
-}
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .header_menu h1 {
@@ -191,7 +191,7 @@ main .main_icon .icon_row img {
   transition: transform 0.3s ease; /* Logo kattalashishi animatsiyasi */
 }
 
-main .main_icon .icon_row img:hover{
+main .main_icon .icon_row img:hover {
   transform: scale(1.2);
 }
 
@@ -205,12 +205,12 @@ main .main_icon_2 .icon_row {
 
 main .main_icon_2 .icon_row img {
   box-shadow: 10px 10px 10px rgb(59, 59, 59);
-  cursor: pointer; 
-  transition: transform 0.3s ease; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
   background: #000000;
 }
 
-main .main_icon_2 .icon_row img:hover{
+main .main_icon_2 .icon_row img:hover {
   transform: scale(1.2);
 }
 
@@ -238,12 +238,16 @@ main .main_icon_2 .bxl-github {
   max-width: 550px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .crads .card:hover {
-  background: #000;
-  transition: all;
+  box-shadow: 0 4px 8px 0 rgba(255, 172, 172, 0.2),
+    0 6px 20px 0 rgba(223, 0, 0, 0.19);
+  transition: 0.4s;
+  max-width: 500px;
 }
 
 .crads {
@@ -265,6 +269,11 @@ section .crads .card a {
   font-weight: 400;
   line-height: 26px;
   color: white;
+  transition: color 0.4s;
+}
+
+section .crads .card a:hover {
+  color: #fead0a;
 }
 
 section .crads .card li {
@@ -385,7 +394,7 @@ footer .footer_design p {
 
 @media screen and (max-width: 920px) {
   main .main_icon .icon_row {
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
   }
   .crads {
     grid-template-columns: auto auto;
@@ -394,7 +403,7 @@ footer .footer_design p {
 
 @media screen and (max-width: 748px) {
   main .main_icon_2 .icon_row {
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
   }
   .crads {
     grid-template-columns: auto;
@@ -403,19 +412,18 @@ footer .footer_design p {
 
 @media screen and (max-width: 576px) {
   main .main_icon .icon_row {
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
   }
   main .main_icon_2 .icon_row {
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
   }
 
   main .main_icon {
     max-width: 400px;
     margin: auto;
-    display: block; 
+    display: block;
   }
 
-  
   /* main .main_icon .icon_row {
     grid-template-columns: auto;
  
@@ -425,10 +433,10 @@ footer .footer_design p {
 
   } */
 
-  main .main_icon_2{
+  main .main_icon_2 {
     max-width: 400px;
     margin: auto;
-    display: block; 
+    display: block;
   }
 }
 
@@ -468,18 +476,15 @@ footer .footer_design p {
   }
 }
 
-
-
-@media screen and (max-width:300px) {
+@media screen and (max-width: 300px) {
   main .main_icon .icon_row {
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     max-width: 400px;
     margin: auto;
   }
   main .main_icon_2 .icon_row {
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     max-width: 400px;
     margin: auto;
   }
-
 }
